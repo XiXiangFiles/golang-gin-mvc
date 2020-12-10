@@ -10,4 +10,5 @@ var router = gin.Default()
 
 func IndexRouter(rg *gin.RouterGroup) {
 	rg.GET("/ping", model.User)
+	rg.GET("/", model.Index)
 }
